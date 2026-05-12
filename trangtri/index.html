@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đồ án Web - Trần Tấn Lực</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TTL SPORT</h1>
+        <p>Giỏ hàng: <span id="cart-count">0</span> sản phẩm</p>
+    </header>
+
+    <main>
+        <div class="product">
+            <h3>Giày Nike</h3>
+            <p>Giá: <span>2000000</span>đ</p>
+            <button class="add-btn">Mua ngay</button>
+        </div>
+
+        <div class="product">
+            <h3>Áo Adidas</h3>
+            <p>Giá: <span>500000</span>đ</p>
+            <button class="add-btn">Mua ngay</button>
+        </div>
+
+        <div class="bill">
+            <h4>Hóa đơn của bạn:</h4>
+            <ul id="bill-list"></ul>
+            <p><strong>Tổng: <span id="total">0</span>đ</strong></p>
+        </div>
+    </main>
+
+    <section class="contact">
+        <h3>Liên hệ</h3>
+        <form id="contact-form">
+            <input type="email" id="email" placeholder="Email của bạn">
+            <button type="button" id="submit-btn">Gửi</button>
+            <input type="text" id="username" placeholder=" lời phê bình">
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>SV thực hiện: Trần Tấn Lực - Đại học Tây Nguyên</p>
+        <p> giáo viên hướng dẫn: Nguyễn Văn A</p>
+        <p>điện thoại: 0123456789</p>
+    </footer>
+
+    <script src="jquery-4.0.0.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

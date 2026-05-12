@@ -1,0 +1,78 @@
+/* Reset khoảng cách mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Thanh menu màu đỏ */
+.navbar {
+    background-color: #c0392b;
+    padding: 10px 0;
+}
+
+/* Dàn hàng ngang các mục */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+/* Các ô chữ trắng xám */
+.nav-item {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.nav-item a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Nút Home tròn */
+.nav-home {
+    background-color: #e5e5e5;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-home a { color: #666; text-decoration: none; }
+
+/* Chữ Logo ở giữa */
+.nav-logo {
+    color: white;
+    font-weight: bold;
+}
+
+/* Nội dung chính */
+.content {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-box {
+    text-align: center;
+    border: 2px dashed #ccc;
+    padding: 30px;
+    max-width: 700px;
+}
+
+.main-img {
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+}

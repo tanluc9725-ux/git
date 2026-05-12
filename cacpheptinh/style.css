@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #eceff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    background-color: white;
+    border: 3px solid #333; /* Nét vẽ khung ngoài */
+    padding: 40px;
+    width: 500px;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    color: #333;
+}
+
+.calculator-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Cột nhập liệu */
+.input-labels-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row label {
+    width: 110px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.square-input {
+    width: 120px;
+    height: 40px;
+    border: 2px solid #333;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.square-input:focus {
+    background-color: #fff9c4; /* Đổi màu nhẹ khi đang nhập */
+    border-color: #2196f3;
+}
+
+/* Kết quả */
+.result-row {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#result-value {
+    color: #d32f2f; /* Màu đỏ cho kết quả nổi bật */
+    margin-left: 10px;
+}
+
+/* Cột nút bấm */
+.operator-buttons-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.operator-btn {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border: 2px solid #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.operator-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.operator-btn:active {
+    transform: scale(0.9);
+}

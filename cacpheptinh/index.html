@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Phép Tính</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="main-container">
+        <h2 class="main-title">CÁC PHÉP TÍNH</h2>
+
+        <div class="calculator-content">
+            <div class="input-labels-column">
+                <div class="row">
+                    <label>Số hạng 1</label>
+                    <input type="number" id="num1" class="square-input">
+                </div>
+                <div class="row">
+                    <label>Số hạng 2</label>
+                    <input type="number" id="num2" class="square-input">
+                </div>
+                <div class="result-row">
+                    <span>Kết quả: </span>
+                    <span id="result-value">?</span>
+                </div>
+            </div>
+
+            <div class="operator-buttons-column">
+                <button class="operator-btn">+</button>
+                <button class="operator-btn">-</button>
+                <button class="operator-btn">*</button>
+                <button class="operator-btn">/</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    document.querySelectorAll('.operator-btn')
+         .forEach(button => {
+        button.addEventListener('click', () => {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let result;
+
+            switch (button.textContent) 
+            {
+                case '+':
+                    result = num1 + num2;
+                    break;
+            }
+
+            document.getElementById('result-value').textContent = result;
+        });
+     });
+    
+    </script>
+</body>
+</html>
